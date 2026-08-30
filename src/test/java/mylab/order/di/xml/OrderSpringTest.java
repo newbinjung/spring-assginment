@@ -18,7 +18,7 @@ public class OrderSpringTest {
     void setup() {
         System.out.println("==> setup");
         // 1. Spring Container 객체생성
-        applicationContext = new GenericXmlApplicationContext("classpath:mylab.order.di.xml");
+        applicationContext = new GenericXmlApplicationContext("classpath:mylab-order-di.xml");
 
         // 2. ShoppingCart와 OrderService 주입 받기
         shoppingCart = applicationContext.getBean("shoppingCart", ShoppingCart.class);
